@@ -35,4 +35,4 @@ streamlit run app.py
 
 ## 👨‍💻 Author
 
-Pujan Patel
+Pujan Pately

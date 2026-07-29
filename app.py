@@ -24,11 +24,17 @@ hobby = st.multiselect(
 agree = st.checkbox("I Accept Terms & Conditions")
 
 if st.button("Submit"):
-    st.success("Registration Successful ✅")
+    if not agree:
+        st.error("Please accept Terms & Conditions.")
+    else:
+        st.success("Registration Successful! 🎉")
+        st.balloons()
 
-    st.write("### Student Details")
-    st.write("Name :", name)
-    st.write("Age :", age)
-    st.write("Branch :", branch)
-    st.write("Gender :", gender)
-    st.write("Hobbies :", hobby)
+        st.write("### Student Details")
+        st.write("Name :", name)
+        st.write("Age :", age)
+        st.write("Branch :", branch)
+        st.write("Gender :", gender)
+        st.write("Hobbies :", hobby)
+
+        
